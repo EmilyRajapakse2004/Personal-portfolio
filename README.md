@@ -1,6 +1,6 @@
 # Emily Rajapakse - Personal Portfolio
 
-![Portfolio Screenshot](assets/home-screenshot.jpg)
+![Portfolio Screenshot](assets/home-screenshot.png)
 
 ## Overview
 This is a personal portfolio website for **Emily Rajapakse**, a BSc (Hons) student in **Artificial Intelligence and Data Science** at the Informatics Institute of Technology (IIT), UK.  
@@ -90,7 +90,7 @@ portfolio/
 ## How to Use
 
 - Open `index.html` in a web browser.  
--git clone https://github.com/yourusername/portfolio.git
+-git clone https://emilyrajapakse2004.github.io/Personal-portfolio/
 - Click **Download CV** to save the resume.  
 - Click social icons to visit profiles.  
 - Click phone/email icons to interact.
