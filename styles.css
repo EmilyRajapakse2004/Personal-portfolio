@@ -110,3 +110,16 @@ header { position: fixed; top: 0; width: 100%; padding: 20px; display: flex; jus
   color: royalblue;
 }
 
+.project-img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+.see-more{
+  margin-top:30px;
+}
+
+.see-more a{
+  display:inline-block;
+}
