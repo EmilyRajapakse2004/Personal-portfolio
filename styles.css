@@ -123,3 +123,264 @@ header { position: fixed; top: 0; width: 100%; padding: 20px; display: flex; jus
 .see-more a{
   display:inline-block;
 }
+
+.project-full{
+margin-top:60px;
+max-width:900px;
+}
+
+.project-images{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+margin:20px 0;
+}
+
+.project-images img{
+width:100%;
+border-radius:10px;
+object-fit:cover;
+}
+
+.project-full h3{
+margin-bottom:10px;
+color:royalblue;
+}
+
+/* Each card stacked vertically */
+.volunteer-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.volunteer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* Card heading */
+.volunteer-card h3 {
+  color: royalblue;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* Card paragraphs */
+.volunteer-card p {
+  color: #e6e6e6;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* 4 images inside each card */
+.volunteer-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.volunteer-images img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.volunteer-images img:hover {
+  transform: scale(1.05);
+}
+
+/* For desktop: 4 images in a row */
+@media (min-width: 768px) {
+  .volunteer-images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* See More button */
+.see-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.see-more-container .hire-btn {
+  background: royalblue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.see-more-container .hire-btn:hover {
+  background: darkblue;
+  transform: translateY(-2px);
+}
+
+/* ==============================
+   Achievements Section
+   ============================== */
+
+.achievement-card{
+background: rgba(255,255,255,0.05);
+padding:25px;
+border-radius:15px;
+margin-bottom:30px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover{
+transform: translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.35);
+}
+
+.achievement-card h3{
+color:royalblue;
+margin-bottom:15px;
+}
+
+.achievement-card p{
+color:#e6e6e6;
+line-height:1.5;
+}
+
+/* images grid */
+
+.achievement-images{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-bottom:15px;
+}
+
+.achievement-images img{
+width:100%;
+height:120px;
+object-fit:cover;
+border-radius:10px;
+transition: transform 0.3s ease;
+}
+
+.achievement-images img:hover{
+transform:scale(1.05);
+}
+
+/* desktop view */
+
+@media(min-width:768px){
+.achievement-images{
+grid-template-columns:repeat(4,1fr);
+}
+}
+
+/* =====================================
+   Certificates Section
+===================================== */
+
+.certificates-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:30px;
+    margin-top:40px;
+}
+
+
+/* Certificate Card */
+
+.certificate-card{
+    background:rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Hover Effect */
+
+.certificate-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.35);
+}
+
+
+/* Certificate Image */
+
+.certificate-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+    transition:transform 0.3s ease;
+}
+
+
+/* Image Hover Zoom */
+
+.certificate-card img:hover{
+    transform:scale(1.03);
+}
+
+
+/* Certificate Title */
+
+.certificate-card h3{
+    color:royalblue;
+    font-size:1.1rem;
+    margin-bottom:10px;
+}
+
+
+/* Certificate Description */
+
+.certificate-card p{
+    color:#e6e6e6;
+    font-size:0.95rem;
+    line-height:1.5;
+}
+
+
+
+
+@media(min-width:768px){
+
+.certificates-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media(min-width:1200px){
+
+.certificates-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+
+@media(max-width:480px){
+
+.certificate-card img{
+    height:160px;
+}
+
+.certificate-card h3{
+    font-size:1rem;
+}
+
+.certificate-card p{
+    font-size:0.9rem;
+}
+
+}
