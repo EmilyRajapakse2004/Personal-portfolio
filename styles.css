@@ -125,26 +125,27 @@ header { position: fixed; top: 0; width: 100%; padding: 20px; display: flex; jus
 }
 
 .project-full{
-margin-top:60px;
-max-width:900px;
+  margin-top:60px;
+  max-width:900px;
 }
 
 .project-images{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:15px;
-margin:20px 0;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+  margin:20px 0;
 }
 
 .project-images img{
-width:100%;
-border-radius:10px;
-object-fit:cover;
+  width:100%;
+  height:120px;
+  border-radius:10px;
+  object-fit:cover;
 }
 
 .project-full h3{
-margin-bottom:10px;
-color:royalblue;
+  margin-bottom:10px;
+  color:royalblue;
 }
 
 /* Each card stacked vertically */
@@ -230,55 +231,55 @@ color:royalblue;
    ============================== */
 
 .achievement-card{
-background: rgba(255,255,255,0.05);
-padding:25px;
-border-radius:15px;
-margin-bottom:30px;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255,255,255,0.05);
+  padding:25px;
+  border-radius:15px;
+  margin-bottom:30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .achievement-card:hover{
-transform: translateY(-5px);
-box-shadow:0 10px 25px rgba(0,0,0,0.35);
+  transform: translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.35);
 }
 
 .achievement-card h3{
-color:royalblue;
-margin-bottom:15px;
+  color:royalblue;
+  margin-bottom:15px;
 }
 
 .achievement-card p{
-color:#e6e6e6;
-line-height:1.5;
+  color:#e6e6e6;
+  line-height:1.5;
 }
 
 /* images grid */
 
 .achievement-images{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:10px;
-margin-bottom:15px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin-bottom:15px;
 }
 
 .achievement-images img{
-width:100%;
-height:120px;
-object-fit:cover;
-border-radius:10px;
-transition: transform 0.3s ease;
+  width:100%;
+  height:120px;
+  object-fit:cover;
+  border-radius:10px;
+  transition: transform 0.3s ease;
 }
 
 .achievement-images img:hover{
-transform:scale(1.05);
+  transform:scale(1.05);
 }
 
 /* desktop view */
 
 @media(min-width:768px){
-.achievement-images{
-grid-template-columns:repeat(4,1fr);
-}
+  .achievement-images{
+    grid-template-columns:repeat(4,1fr);
+  }
 }
 
 /* =====================================
@@ -286,101 +287,102 @@ grid-template-columns:repeat(4,1fr);
 ===================================== */
 
 .certificates-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:30px;
-    margin-top:40px;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:30px;
+  margin-top:40px;
 }
-
 
 /* Certificate Card */
 
 .certificate-card{
-    background:rgba(255,255,255,0.05);
-    padding:20px;
-    border-radius:15px;
-    text-align:center;
-    transition:transform 0.3s ease, box-shadow 0.3s ease;
+  background:rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:15px;
+  text-align:center;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 /* Hover Effect */
 
 .certificate-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 12px 25px rgba(0,0,0,0.35);
+  transform:translateY(-6px);
+  box-shadow:0 12px 25px rgba(0,0,0,0.35);
 }
-
 
 /* Certificate Image */
 
 .certificate-card img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    border-radius:10px;
-    margin-bottom:15px;
-    transition:transform 0.3s ease;
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:15px;
+  transition:transform 0.3s ease;
 }
-
 
 /* Image Hover Zoom */
 
 .certificate-card img:hover{
-    transform:scale(1.03);
+  transform:scale(1.03);
 }
-
 
 /* Certificate Title */
 
 .certificate-card h3{
-    color:royalblue;
-    font-size:1.1rem;
-    margin-bottom:10px;
+  color:royalblue;
+  font-size:1.1rem;
+  margin-bottom:10px;
 }
-
 
 /* Certificate Description */
 
 .certificate-card p{
-    color:#e6e6e6;
-    font-size:0.95rem;
-    line-height:1.5;
+  color:#e6e6e6;
+  font-size:0.95rem;
+  line-height:1.5;
 }
 
-
-
+/* Tablet */
 
 @media(min-width:768px){
-
-.certificates-grid{
+  .certificates-grid{
     grid-template-columns:repeat(2,1fr);
+  }
 }
 
-}
-
+/* Large screens */
 
 @media(min-width:1200px){
-
-.certificates-grid{
+  .certificates-grid{
     grid-template-columns:repeat(4,1fr);
+  }
 }
 
-}
-
+/* Small mobile */
 
 @media(max-width:480px){
 
-.certificate-card img{
+  .certificate-card img{
     height:160px;
-}
+  }
 
-.certificate-card h3{
+  .certificate-card h3{
     font-size:1rem;
+  }
+
+  .certificate-card p{
+    font-size:0.9rem;
+  }
+
 }
 
-.certificate-card p{
-    font-size:0.9rem;
-}
+/* Extra mobile fixes */
+
+@media(max-width:768px){
+
+  .project-images{
+    grid-template-columns:repeat(2,1fr);
+  }
 
 }
