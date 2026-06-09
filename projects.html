@@ -23,6 +23,50 @@
 
 <div class="project-full">
 
+<h3>HR Automation Multi-Agent System with LangGraph Orchestration and Memory Engine</h3>
+
+<div class="project-images">
+
+<img src="assets/Hrauto1.PNG">
+<img src="assets/Hrauto2.PNG">
+<img src="assets/Hrauto3.jfif">
+
+</div>
+
+<p>
+Developed an intelligent HR automation backend system using FastAPI, LangGraph, and SQLite, designed to process natural language HR requests and route them to specialized agents through a central orchestration pipeline.
+</p>
+
+<p>
+The system implements a multi-agent architecture consisting of Leave, Scheduling, Compliance, and Clarification agents. Each request is first processed through an intent classification engine that assigns an intent label with a confidence score, followed by routing to the appropriate agent for execution.
+</p>
+
+<p>
+A LangGraph-based orchestration layer was implemented to structure the workflow into sequential nodes including classification, routing, execution, and audit logging. This ensures a deterministic and traceable execution pipeline for every user request.
+</p>
+
+<p>
+The system also includes a two-tier memory mechanism consisting of Short-Term Memory (STM), which stores recent user interactions, and Long-Term Memory (LTM), which captures persistent user preferences for contextual understanding across sessions.
+</p>
+
+<p>
+An append-only audit logging system was implemented using SQLite to store all system interactions, including user input, detected intent, confidence score, and selected agent. This enables full traceability, debugging, and system evaluation.
+</p>
+
+<p>
+A RESTful API was developed using FastAPI, exposing endpoints for request handling, audit retrieval, and health monitoring. The system also includes fallback handling for uncertain inputs, ensuring that unclear requests are safely routed to a Clarification Agent without system failure.
+</p>
+
+<p><b>Technologies Used:</b> Python 3.11, FastAPI, LangGraph, SQLite, Pydantic, Uvicorn, LangChain</p>
+
+<p><b>Outcome:</b> This project demonstrates a scalable multi-agent AI architecture for HR automation, showcasing orchestration design, memory integration, and audit logging. It provides a strong foundation for extending into LLM-powered enterprise HR systems with improved reasoning, persistence, and cloud deployment capabilities.</p>
+
+</div>
+
+<!-- PROJECT  -->
+
+<div class="project-full">
+
 <h3>Anomaly Detection and Correction System for Automated Manual Transmission (AMT) Using Power BI</h3>
 
 <div class="project-images">
